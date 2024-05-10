@@ -9,6 +9,10 @@
 </head>
 
 <body class="bgBody">
+    <div>
+        <h1 style="text-align: center; position: absolute; left: 40%; right: 40%; bottom: 7px; font-size: 22px;">Khizar
+            Wakeel <br />Software Developer</h1>
+    </div>
     <div class="flexCont">
         <div class="mainContDiv">
             <div class="contDiv">
@@ -22,44 +26,44 @@
                         </div>
                     </div>
                     <div>
-                        <input type="text" class="inputPass" placeholder="Strong Password" />
+                        <input type="text" class="inputPass" placeholder="Strong Password" id="passwordInput" />
                     </div>
                     <div class="textCopyDiv">
                         <div></div>
                         <div>
-                            <button class="demoBtn">Copy</button>
+                            <button class="demoBtn" onclick="copyPassword()">Copy</button>
                         </div>
                     </div>
                     <div>
-                        <input type="range" class="rangeInput" />
+                        <input type="range" class="rangeInput" maxlength="24" id="passwordRange" value="12" />
                     </div>
                     <div class="checkBoxesDiv">
                         <div>
                             <p class="lengthText">
-                                Character Length: <span style="font-weight: bold; color: chocolate;">10</span>
+                                Character Length: <span style="font-weight: bold; color: chocolate;">12</span>
                             </p>
                         </div>
                         <div style="display: flex; gap: 10px;">
                             <div style="display: flex; align-items: center; gap: 2px; font-size: 20px;">
-                                <input type="checkbox" id="AToZ" checked>
-                                <label for="AToZ">A-Z</label>
+                                <input type="checkbox" id="upperCheck" checked>
+                                <label for="upperCheck">A-Z</label>
                             </div>
                             <div style="display: flex; align-items: center; gap: 2px; font-size: 22px;">
-                                <input type="checkbox" id="aToz">
-                                <label for="aToz" style="margin-top: -4px;">a-z</label>
+                                <input type="checkbox" id="lowerCheck">
+                                <label for="lowerCheck" style="margin-top: -4px;">a-z</label>
                             </div>
                             <div style="display: flex; align-items: center; gap: 2px; font-size: 20px;">
-                                <input type="checkbox" id="0To9">
-                                <label for="0To9">0-9</label>
+                                <input type="checkbox" id="numCheck">
+                                <label for="numCheck">0-9</label>
                             </div>
                             <div style="display: flex; align-items: center; gap: 2px; font-size: 20px;">
-                                <input type="checkbox" id="symbol">
-                                <label for="symbol">@#$</label>
+                                <input type="checkbox" id="symbolCheck">
+                                <label for="symbolCheck">@#$</label>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <button class="genePass">Generate Password</button>
+                        <button class="genePass" onclick="generatePasswordBtn()">Generate Password</button>
                     </div>
                 </div>
             </div>
