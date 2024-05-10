@@ -1,0 +1,101 @@
+.bgBody {
+    background-color: #ffd702;
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri;
+}
+
+.mainContDiv {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.flexCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 10px;
+}
+
+.contDiv {
+    width: auto;
+    height: auto;
+    padding: 40px 50px;
+}
+
+.maxWidthDiv {
+    max-width: 100%;
+}
+
+.headDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.demoBtn {
+    background-color: white;
+    border: 1px solid #ffa400;
+    padding: 13px 35px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.passHead {
+    font-size: 48px;
+    line-height: 0px;
+}
+
+.inputPass {
+    width: 98%;
+    outline: none;
+    font-size: 32px;
+    border-radius: 6px;
+    border: 1px solid #ffa400;
+    padding: 5px 0px;
+    color: rgb(51, 51, 51);
+    padding-left: 12px;
+    margin-top: 25px;
+}
+
+.demoBtn:hover {
+    background-color: #ffa400;
+    color: white;
+}
+
+.textCopyDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.rangeInput {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.lengthText {
+    font-size: 20px;
+}
+
+.checkBoxesDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genePass {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ffa400;
+    padding: 16px 35px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.genePass:hover {
+    background-color: #ffa400;
+    color: white;
+}

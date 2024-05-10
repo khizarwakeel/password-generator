@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Password Generator</title>
+</head>
+
+<body class="bgBody">
+    <div class="flexCont">
+        <div class="mainContDiv">
+            <div class="contDiv">
+                <div class="maxWidthDiv">
+                    <div class="headDiv">
+                        <div>
+                            <h1 class="passHead">Password Generator</h1>
+                        </div>
+                        <div>
+                            <button class="demoBtn">Demo</button>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" class="inputPass" placeholder="Strong Password" />
+                    </div>
+                    <div class="textCopyDiv">
+                        <div></div>
+                        <div>
+                            <button class="demoBtn">Copy</button>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="range" class="rangeInput" />
+                    </div>
+                    <div class="checkBoxesDiv">
+                        <div>
+                            <p class="lengthText">
+                                Character Length: <span style="font-weight: bold; color: chocolate;">10</span>
+                            </p>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <div style="display: flex; align-items: center; gap: 2px; font-size: 20px;">
+                                <input type="checkbox" id="AToZ" checked>
+                                <label for="AToZ">A-Z</label>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 2px; font-size: 22px;">
+                                <input type="checkbox" id="aToz">
+                                <label for="aToz" style="margin-top: -4px;">a-z</label>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 2px; font-size: 20px;">
+                                <input type="checkbox" id="0To9">
+                                <label for="0To9">0-9</label>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 2px; font-size: 20px;">
+                                <input type="checkbox" id="symbol">
+                                <label for="symbol">@#$</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="genePass">Generate Password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./App.js"></script>
+</body>
+
+</html>
