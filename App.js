@@ -10,8 +10,8 @@ let upperCheck = document.getElementById("upperCheck");
 let numCheck = document.getElementById("numCheck");
 let symbolCheck = document.getElementById("symbolCheck");
 
-const generateUnique = (charSet) => {
-    return charSet[Math.floor(Math.random() * charSet.length)];
+const generateUnique = (passChar) => {
+    return passChar[Math.floor(Math.random() * passChar.length)];
 }
 
 const generatePassword = () => {
@@ -30,8 +30,8 @@ const generatePassword = () => {
     }
 
     for (let i = 0; i < parseInt(passwordRange.value); i++) {
-        const randomCharSet = selectedChars[Math.floor(Math.random() * selectedChars.length)];
-        password += generateUnique(randomCharSet);
+        const randomPass = selectedChars[Math.floor(Math.random() * selectedChars.length)];
+        password += generateUnique(randomPass);
     }
 
     passwordInput.value = password;
@@ -48,7 +48,7 @@ passwordRange.addEventListener('input', () => {
 
 function copyPassword() {
     passwordInput.select();
-    passwordInput.setSelectionRange(0, 99999);
+    passwordInput.setSelectionRange(0, 100);
     document.execCommand('copy');
     passwordInput.blur();
     alert("Password copied");
